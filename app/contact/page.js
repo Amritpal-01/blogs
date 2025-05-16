@@ -16,7 +16,7 @@ export default function ContactPage() {
       <section className="text-center py-24 bg-gradient-to-b from-gray-50 to-white">
         <h1 className="text-5xl font-bold text-gray-900 mb-6">Contact Us</h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Have questions? We'd love to hear from you.
+          Have questions? We&apos;d love to hear from you.
         </p>
       </section>
 
@@ -27,7 +27,7 @@ export default function ContactPage() {
             <h2 className="text-4xl font-bold text-gray-900 mb-8">Get in Touch</h2>
             <p className="text-lg text-gray-600 mb-8">
               Whether you have a question about our platform, want to collaborate, 
-              or just want to say hello, we're here to help.
+              or just want to say hello, we&apos;re here to help.
             </p>
             <div className="space-y-8">
               <div>
