@@ -5,15 +5,16 @@ import Link from "next/link";
 import Image from "next/image";
 
 const FullWidthBlog = () => {
-  let getPosts = async () => {
+  
+
+  useEffect(() => {
+    let getPosts = async () => {
     let posts = await fetch(
       `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/blogs??pagination[limit]=1&populate=*`
     );
     let res = await posts.json();
     setFeaturedBlogs(res.data[0]);
   };
-
-  useEffect(() => {
     getPosts();
   }, []);
 

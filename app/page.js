@@ -1,6 +1,7 @@
 "use client"
 import FullWidthBlog from '../components/FullWidthBlog'
 import FeaturedBlogs from '../components/FeaturedBlogs'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -17,18 +18,18 @@ export default function Home() {
               Join our community of writers and developers. Share your insights, learn from others, and grow together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
+              <Link
                 href="/blogs"
                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-blue-700 bg-white hover:bg-blue-50 transition-colors duration-200"
               >
                 Explore Blogs
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/contact"
                 className="inline-flex items-center justify-center px-6 py-3 border border-white text-base font-medium rounded-lg text-white hover:bg-blue-700 transition-colors duration-200"
               >
                 Start Writing
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -80,7 +81,7 @@ export default function Home() {
               { name: 'Artificial Intelligence', count: 12, color: 'bg-purple-100 text-purple-800' },
               { name: 'Design', count: 15, color: 'bg-pink-100 text-pink-800' },
             ].map((category) => (
-              <a
+              <Link
                 key={category.name}
                 href={`/blogs?category=${category.name.toLowerCase().replace(' ', '-')}`}
                 className="group block p-6 rounded-xl bg-white shadow-sm hover:shadow-md transition-shadow duration-200"
@@ -96,7 +97,7 @@ export default function Home() {
                 <p className="text-gray-600">
                   {category.count} articles
                 </p>
-              </a>
+              </Link>
             ))}
           </div>
         </div>

@@ -5,15 +5,16 @@ import Link from "next/link";
 import Image from "next/image";
 
 const FeaturedBlogs = () => {
-  let getPosts = async () => {
+  
+
+  useEffect(() => {
+    let getPosts = async () => {
     let posts = await fetch(
       "http://localhost:1337/api/blogs??pagination[limit]=6&populate=*"
     );
     let res = await posts.json();
     setFeaturedBlogs(res.data);
   };
-
-  useEffect(() => {
     getPosts();
   }, []);
 

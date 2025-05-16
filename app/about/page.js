@@ -29,7 +29,7 @@ export default function AboutPage() {
       <section className="text-center py-24 bg-gradient-to-b from-gray-50 to-white">
         <h1 className="text-5xl font-bold text-gray-900 mb-6">About BlogSpace</h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          We're on a mission to make knowledge sharing accessible to everyone
+          We&apos;re on a mission to make knowledge sharing accessible to everyone
         </p>
       </section>
 
@@ -40,7 +40,7 @@ export default function AboutPage() {
           <p className="text-lg text-gray-600 leading-relaxed">
             At BlogSpace, we believe in the power of sharing knowledge and experiences. 
             Our platform is designed to be a space where writers, developers, and thinkers 
-            can share their insights with the world. We're committed to creating a community 
+            can share their insights with the world. We&apos;re committed to creating a community 
             that fosters learning, growth, and meaningful discussions.
           </p>
         </div>
@@ -58,9 +58,9 @@ export default function AboutPage() {
               and thought leaders.
             </p>
             <p>
-              Today, we're proud to host thousands of articles covering topics from web 
+              Today, we&apos;re proud to host thousands of articles covering topics from web 
               development to artificial intelligence, from software engineering to cloud 
-              computing. Our community continues to grow, and we're excited to see what 
+              computing. Our community continues to grow, and we&apos;re excited to see what 
               the future holds.
             </p>
           </div>
